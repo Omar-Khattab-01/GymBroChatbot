@@ -17,7 +17,7 @@ except ModuleNotFoundError:
     import gradio as gr
 
 # Initialize Groq client
-api_key = "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"
+api_key = os.getenv("GROQ_API_KEY")
 client = Groq(api_key=api_key)
 
 # Initialize conversation history
